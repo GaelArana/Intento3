@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piedra, papel o tijera</title>
+  <link rel="stylesheet" href="piedra, papel o tijera.css">
+</head>
+<body>
+    <div class="rondas" id="rondas">
+        <div class="contenedor-rondas">
+            <h2>Ingresa la cantidad de rondas:</h2>
+            <input type="number" id="cantidadRondas" min="1" max="5" value="1">
+            <div>
+                <button onclick="entrar()" id="botonRondas">Iniciar</button>
+            </div>
+            <div id="jugadores">
+                <h3>Versus</h3>
+                <button onclick="jugador(0)">Robot</button>
+                <button onclick="jugador(1)">jugador 2</button>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor">
+        <h1>Piedra, papel o tijera</h1>
+        <div class="player" id="player1">
+        <h2>Jugador 1</h2>
+        <img src="rock.png" class="choice" data-choice="rock">
+        <img src="paper.png" class="choice" data-choice="paper">
+        <img src="scissors.png" class="choice" data-choice="scissors">
+        </div>
+        <div class="player" id="player2">
+        <h2>Jugador 2</h2>
+        <img src="rock.png" class="choice" data-choice="rock">
+        <img src="paper.png" class="choice" data-choice="paper">
+        <img src="scissors.png" class="choice" data-choice="scissors">
+        </div>
+        <div class="result">
+            <h2>Resultado:</h2>
+            <p class="result-message">Jugadores, elijan sus opciones.</p>
+            <div>
+            <strong>Jugador 1:</strong> <span id="player1Wins">0</span> victorias
+            </div>
+            <div>
+            <strong>Jugador 2:</strong> <span id="player2Wins">0</span> victorias
+            </div>
+        </div>
+    </div>
+  <script src="piedra, papel o tijera.js"></script>
+</body>
+</html>
